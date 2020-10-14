@@ -25,7 +25,6 @@ export class LayoutComponent implements OnInit {
           flag: country.flag
         }
       })
-      console.log(this.baseCountriesArray);
       this.filteredCountriesArray = this.baseCountriesArray;
     })
   }

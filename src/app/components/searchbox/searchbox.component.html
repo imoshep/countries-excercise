@@ -1,8 +1,8 @@
 <div class="search-box">
   <label for="searchInput">Filter Countries:</label>
-  <input type="text" name="searchInput" id="searchInput" [(value)]="inputValue" (keyup)="setValue($event)">
+  <input type="text" name="searchInput" id="searchInput" [(value)]="inputValue" (keyup)="setValue($event)" list="autocomplete">
   <datalist id='autocomplete'>
-    <option *ngfor="let country of countries" [value]="country.name">{{country.name}}</option>
+    <option *ngFor="let country of countries" [value]="country.name">{{country.name}}</option>
   </datalist>
   <input type="button" value="Reset" (click)='resetArray()'>
 </div>
