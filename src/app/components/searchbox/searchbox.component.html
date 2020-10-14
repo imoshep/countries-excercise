@@ -1,0 +1,5 @@
+<div class="search-box">
+  <label for="searchInput">Filter Countries:</label>
+  <input type="text" name="searchInput" id="searchInput" [(value)]="inputValue" (keyup)="setValue($event)">
+  <input type="button" value="Reset" (click)='resetArray()'>
+</div>

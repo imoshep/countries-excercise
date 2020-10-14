@@ -1,0 +1,7 @@
+<div class="search-results">
+  <app-country
+  *ngFor="let country of filteredCountriesArray"
+  [country]="country"
+  (countryPopped)="popCountry($event)"
+  ></app-country>
+</div>

@@ -1,0 +1,13 @@
+.search-box {
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  & label {
+    padding-right: 0.5rem;
+    font-size: 2rem;
+  }
+
+  & input {
+    font-size: 2rem;
+  }
+}
