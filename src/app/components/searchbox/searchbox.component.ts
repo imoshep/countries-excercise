@@ -1,4 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Country } from 'src/app/interfaces/country';
 
 @Component({
   selector: 'app-searchbox',
@@ -6,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./searchbox.component.scss']
 })
 export class SearchboxComponent implements OnInit {
+  @Input() countries: Country[];
   @Output() inputChanged = new EventEmitter();
   @Output() reset = new EventEmitter();
 

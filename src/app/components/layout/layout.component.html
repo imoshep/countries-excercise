@@ -1,5 +1,6 @@
 <div class="layout">
   <app-searchbox
+  [countries]="filteredCountriesArray"
   (inputChanged)="filterByInput($event)"
   (reset)="resetCountriesArray()"></app-searchbox>
   <app-search-results
